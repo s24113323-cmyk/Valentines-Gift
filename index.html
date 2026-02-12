@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Love Letter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            overflow: hidden;
+        }
+        .font-romantic {
+            font-family: 'Dancing Script', cursive;
+        }
+        /* Custom Leaflet Pastel Styles */
+        .leaflet-container {
+            background: #fdf2f2 !important;
+            outline: none;
+        }
+        .leaflet-tile-pane {
+            filter: sepia(20%) hue-rotate(330deg) brightness(1.05) saturate(80%);
+        }
+        .heart-marker {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .distance-label {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid #fb7185;
+            border-radius: 1rem;
+            padding: 0.5rem 1rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            white-space: nowrap;
+            font-weight: 700;
+            color: #e11d48;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "canvas-confetti": "https://esm.sh/canvas-confetti@^1.9.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-rose-50">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
